@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Login</title>
+</head>
+<body>
+<form action="/sso/login">
+    <input type="hidden" name="url" th:value="${url}">
+    <table>
+        <tr><td>UserName:</td><td><input type="text" name="username" value="wilber"></td></tr>
+        <tr><td>Password:</td><td><input type="password" name="password" value="123456"></td></tr>
+        <tr><td colspan="2"><input type="submit" value="Submit"></td></tr>
+    </table>
+</form>
+</body>
+</html>
